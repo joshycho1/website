@@ -1,37 +1,79 @@
 h1 {
-    font-size: 6vw;
+    margin: 0;
+    font-size: 5vw;
 }
 h2 {
-    font-size: 4vw;
+    font-size: 3vw;
 }
 body{
+    margin:0;
     text-align: center;
     font-size: 2vw;
 }
 
+#content {
+    padding:20px;
+
+}
+
 #nav {
     list-style-type: none;
-    margin:0;
-    padding:0;
-    width:200px;
-    background-color: #f1f1f1;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #333;
 }
 
-li a {
-    display: block;
-    color:#000;
-    padding: 8px 16px;
+#nav li {
+    float: left;
+}
+
+li a, .dropbtn {
+    display: inline-block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
     text-decoration: none;
+    font-size: 2vw;
 }
 
-li a.active {
-    background-color: #4CAF50;
-    color: white;
+li a:hover, .dropdown:hover .dropbtn {
+    background-color: red;
 }
 
-li a:hover:not(.active) {
-    background-color: #555;
-    color: white;
+li.dropdown {
+    display: inline-block;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+
+.dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+}
+
+.dropdown-content a:hover {background-color: #f1f1f1}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+#jumpto {
+  margin: 5% 0;
+}
+
+#rules {
+  margin-bottom: : 10%;
 }
 
 table, tr, th, td {
@@ -52,17 +94,21 @@ img {
     width: 75%;
     min-width: 500px;
     max-width: 900px;
+    margin-bottom: 10%;
 }
 #quote {
     color:dodgerblue;
     font-size:3vw;
+    margin-bottom: 10%;
 }
 ol {
     list-style-position: inside;
 }
 #goals {
     background-image: url("goals_background.jpg");
-    height:560px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    overflow-y: auto;
     border: 1px solid;
 }
 #current_goals {
@@ -83,6 +129,7 @@ button {
 }
 table {
     width:100%;
+    margin-bottom: 10%;
     min-width: 500px;
     max-width:1200px;
 }

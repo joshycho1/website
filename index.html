@@ -12,111 +12,122 @@
     <!-- ### Navigation Bar ### -->
 
     <ul id="nav">
-        <li><a class="active" href="#nav">Home</a></li>
+        <li><a href="#nav">Home</a></li>
         <li><a href="#schedule">Schedule</a></li>
         <li><a href="#goals">Goals</a></li>
         <li><a href="#About">About</a><li>
+        <li class="dropdown">
+          <a href="javascript:void(0)" class="dropbtn">Files</a>
+          <div class="dropdown-content">
+            <a href="#">Link 1</a>
+            <a href="#">Link 2</a>
+            <a href="#">Link 3</a>
+          </div>
+    </li>
     </ul>
 
-    <h1 id="main_title">New Beginning</h1>
+    <div id="content">
+      <h1 id="main_title">New Beginning</h1>
 
-    <p>This will be my first step to recreating myself.</p>
-    <hr />
+      <p>This will be my first step to recreating myself.</p>
 
-    <!-- ### Jump To ### -->
+      <!-- ### Jump To ### -->
+      <div id="jumpto">
+        <hr />
+        <a href="#goals">Goals</a><br />
+        <a href="#work_schedule">Schedule</a><br />
+        <a href="#links">Links</a>
+        <hr />
+      </div>
 
-    <a href="#goals">Goals</a><br />
-    <a href="#work_schedule">Schedule</a><br />
-    <a href="#links">Links</a>
-    <hr />
 
-    <!-- ### Rules ### -->
-
-    <h2>Rules to Follow in Order to Succeed</h2>
-    <ol type="I">
-        <li >Setting goals</li>
-        <li>Maintain the Schedule</li>
-        <li>Never Give Up</li>
-        <li>Remain Confident</li>
-    </ol>
-
-    <!-- ### Image ###-->
-
-    <img align="center" title="Motivational Image" src="motivation.jpg" alt="Work hard in silence, let your success be your noise" width="500" >
-
-    <h2 id="quote"><q>Start Small but maintain progress. Gain motivation from each accomplishment.</q></h2>
-
-    <!-- ### Current Immediate Goals ###-->
-
-    <!--Add <mark> tags around current goals to highlight
-          Add <del> tags around completed goals to cross off -->
-    <div id="goals">
-        <h2 id="current_goals">Current Immediate Goals <sub>-Started 6/24/2018</sub></h2>
-        <ol>
-            <li><mark>Create the skeleton of my website in 1 week (Using only HTML, CSS, Javascript) -Due&nbspJuly&nbsp1st</mark></li>
-            <ul>
-                <li><mark><ins><b>Sun-Wed:</b></ins> Design Website with HTML and CSS</mark></li>
-                <li><ins><b>Thur-Sat:</b></ins> Implement Javascript and refine details</li>
-                </ul>
-            <li>Study SQL and implement a database into the website for 1 week <sub>-Due&nbspJuly&nbsp8th</sub></li>
-            <ul>
-                <li><ins><b>Sun:</b></ins> Overview on what to study for SQL, Create a schedule.</li>
-                <li><ins><b>Sun-Wed:</b></ins> Study SQL based on schedule</li>
-                <li><ins><b>Thur-Sat:</b></ins> Implement to website (With Python potentially)
-                </ul>
-            <li>Study React and update website with React features <sub>-Due&nbspJuly&nbsp5th</sub></li>
+      <!-- ### Rules ### -->
+      <div id="rules">
+        <h2>Rules to Follow in Order to Succeed</h2>
+        <ol type="I">
+            <li >Setting goals</li>
+            <li>Maintain the Schedule</li>
+            <li>Never Give Up</li>
+            <li>Remain Confident</li>
         </ol>
+      </div>
+      <!-- ### Image ###-->
+
+      <img align="center" title="Motivational Image" src="motivation.jpg" alt="Work hard in silence, let your success be your noise" width="500" >
+
+      <h2 id="quote"><q>Start Small but maintain progress. Gain motivation from each accomplishment.</q></h2>
+
+      <!-- ### Current Immediate Goals ###-->
+
+      <!--Add <mark> tags around current goals to highlight
+            Add <del> tags around completed goals to cross off -->
+      <div id="goals">
+          <h2 id="current_goals">Current Immediate Goals <sub>-Started 6/24/2018</sub></h2>
+          <ol>
+              <li><mark>Create the skeleton of my website in 1 week (Using only HTML, CSS, Javascript) -Due&nbspJuly&nbsp1st</mark></li>
+              <ul>
+                  <li><mark><ins><b>Sun-Wed:</b></ins> Design Website with HTML and CSS</mark></li>
+                  <li><ins><b>Thur-Sat:</b></ins> Implement Javascript and refine details</li>
+                  </ul>
+              <li>Study SQL and implement a database into the website for 1 week <sub>-Due&nbspJuly&nbsp8th</sub></li>
+              <ul>
+                  <li><ins><b>Sun:</b></ins> Overview on what to study for SQL, Create a schedule.</li>
+                  <li><ins><b>Sun-Wed:</b></ins> Study SQL based on schedule</li>
+                  <li><ins><b>Thur-Sat:</b></ins> Implement to website (With Python potentially)
+                  </ul>
+              <li>Study React and update website with React features <sub>-Due&nbspJuly&nbsp5th</sub></li>
+          </ol>
+      </div>
+
+      <!-- ### Schedule ###-->
+      <button type="button" onclick="document.getElementById('punch-in').innerHTML = Date()">Punch in</button>
+          <p id="punch-in"></p>
+
+      <div id="schedule">
+          <table align="center">
+              <caption><h3 id="work_schedule">Work Schedule</h3><sub>*Purple: Progress Checked</sub>
+              <tr>
+                  <th>Sunday</th>
+                  <th>Monday</th>
+                  <th>Tuesday</th>
+                  <th class="purple_table_header">Wednesday</th>
+                  <th>Thursday</th>
+                  <th>Friday</th>
+                  <th class="purple_table_header">Saturday</th>
+              </tr>
+              <tr>
+                  <td colspan="2" class="work_time"><b>8:00AM - 10:30AM</b><br />Work on Project</td>
+                  <td colspan="3" class="job_time"><b>5:00AM - 1:30PM</b><br />Part-time Job</td>
+                  <td colspan="2" class="work_time"><b>8:00AM - 10:30AM</b><br />Work on Project</td>
+              </tr>
+              <tr>
+                  <td colspan="2" class="break_time"><b>10:30AM - 11:30AM</b><br />Break and Lunch</td>
+                  <td colspan="3" class="work_time"><b>3:00PM - 6:00PM</b><br />Work on Project</td>
+                  <td colspan="2" class="break_time"><b>10:30AM - 11:30AM</b><br />Break and Lunch</td>
+              </tr>
+              <tr>
+                  <td colspan="2" class="work_time"><b>11:30AM - 2:30PM</b><br />Work on Project</td>
+                  <td colspan="3" class="empty_time"/>
+                  <td colspan="2" class="work_time"><b>11:30AM - 2:30PM</b><br />Work on Project</td>
+              </tr>
+              <tr>
+                  <td colspan="2" class="break_time"><b>2:30PM - 3:30PM</b><br />Break</td>
+                  <td colspan="3" class="empty_time"/>
+                  <td colspan="2" class="break_time"><b>2:30PM - 3:30PM</b><br />Break</td>
+              </tr>
+              <tr>
+                  <td colspan="2" class="work_time"><b>3:30PM - 6:30PM</b><br />Work on Project</td>
+                  <td colspan="3" class="empty_time"/>
+                  <td colspan="2" class="work_time"><b>3:30AM - 6:30PM</b><br />Work on Project</td>
+              </tr>
+          </table>
+      </div>
+
+      <!--### Helpful Websites ###-->
+
+      <h2 id="links">Helpful Websites</h2>
+      <a href="https://www.w3schools.com/html/"title="Go to w3schools website">w3schools</a>
     </div>
-
-    <!-- ### Schedule ###-->
-    <button type="button" onclick="document.getElementById('punch-in').innerHTML = Date()">Punch in</button>
-        <p id="punch-in"></p>
-
-    <div id="schedule">
-        <table align="center">
-            <caption><h3 id="work_schedule">Work Schedule</h3><sub>*Purple: Progress Checked</sub>
-            <tr>
-                <th>Sunday</th>
-                <th>Monday</th>
-                <th>Tuesday</th>
-                <th class="purple_table_header">Wednesday</th>
-                <th>Thursday</th>
-                <th>Friday</th>
-                <th class="purple_table_header">Saturday</th>
-            </tr>
-            <tr>
-                <td colspan="2" class="work_time"><b>8:00AM - 10:30AM</b><br />Work on Project</td>
-                <td colspan="3" class="job_time"><b>5:00AM - 1:30PM</b><br />Part-time Job</td>
-                <td colspan="2" class="work_time"><b>8:00AM - 10:30AM</b><br />Work on Project</td>
-            </tr>
-            <tr>
-                <td colspan="2" class="break_time"><b>10:30AM - 11:30AM</b><br />Break and Lunch</td>
-                <td colspan="3" class="work_time"><b>3:00PM - 6:00PM</b><br />Work on Project</td>
-                <td colspan="2" class="break_time"><b>10:30AM - 11:30AM</b><br />Break and Lunch</td>
-            </tr>
-            <tr>
-                <td colspan="2" class="work_time"><b>11:30AM - 2:30PM</b><br />Work on Project</td>
-                <td colspan="3" class="empty_time"/>
-                <td colspan="2" class="work_time"><b>11:30AM - 2:30PM</b><br />Work on Project</td>
-            </tr>
-            <tr>
-                <td colspan="2" class="break_time"><b>2:30PM - 3:30PM</b><br />Break</td>
-                <td colspan="3" class="empty_time"/>
-                <td colspan="2" class="break_time"><b>2:30PM - 3:30PM</b><br />Break</td>
-            </tr>
-            <tr>
-                <td colspan="2" class="work_time"><b>3:30PM - 6:30PM</b><br />Work on Project</td>
-                <td colspan="3" class="empty_time"/>
-                <td colspan="2" class="work_time"><b>3:30AM - 6:30PM</b><br />Work on Project</td>
-            </tr>
-        </table>
-    </div>
-
-    <!--### Helpful Websites ###-->
-
-    <h2 id="links">Helpful Websites</h2>
-    <a href="https://www.w3schools.com/html/"title="Go to w3schools website">w3schools</a>
-
 </body>
 </html>
 

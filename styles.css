@@ -1,0 +1,118 @@
+h1 {
+    font-size: 6vw;
+}
+h2 {
+    font-size: 4vw;
+}
+body{
+    text-align: center;
+    font-size: 2vw;
+}
+
+#nav {
+    list-style-type: none;
+    margin:0;
+    padding:0;
+    width:200px;
+    background-color: #f1f1f1;
+}
+
+li a {
+    display: block;
+    color:#000;
+    padding: 8px 16px;
+    text-decoration: none;
+}
+
+li a.active {
+    background-color: #4CAF50;
+    color: white;
+}
+
+li a:hover:not(.active) {
+    background-color: #555;
+    color: white;
+}
+
+table, tr, th, td {
+    border:1px solid black;
+    border-collapse:collapse;
+}
+th, td {
+    padding-top: 5px;
+    padding-bottom: 5px;
+}
+th {
+    width:14.2%;
+}
+#main_title {
+    font-size: 9vw;
+}
+img {
+    width: 75%;
+    min-width: 500px;
+    max-width: 900px;
+}
+#quote {
+    color:dodgerblue;
+    font-size:3vw;
+}
+ol {
+    list-style-position: inside;
+}
+#goals {
+    background-image: url("goals_background.jpg");
+    height:560px;
+    border: 1px solid;
+}
+#current_goals {
+    padding-top: 80px;
+}
+button {
+    padding: 10px;
+    margin:30px;
+    font-size: 3vw;
+    width: 20%;
+    height: 5%;
+}
+.schedule {
+    margin-top: 30px;
+    margin-bottom:30px;
+    font-size:2vw;
+    overflow-x:auto;
+}
+table {
+    width:100%;
+    min-width: 500px;
+    max-width:1200px;
+}
+caption {
+    background-color: #80bfff;
+    border:1px solid;
+    border-collapse:collapse;
+}
+#work_schedule {
+    padding:5px;
+    margin: 0px;
+    margin-bottom:-10px;
+}
+.purple_table_header {
+    background-color:#ffccff;
+}
+.work_time {
+    background-color:#ff8080;
+}
+.break_time {
+    background-color:#d6f5f5;
+}
+.empty_time {
+    background-color:#cccccc;
+}
+.job_time {
+    background-color:#ffff99;
+}
+#links {
+    display:block;
+    margin-top:auto;
+    padding-top:20px;
+}
